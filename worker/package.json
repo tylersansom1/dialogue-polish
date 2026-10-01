@@ -1,0 +1,13 @@
+{
+  "name": "dialogue-polish-worker",
+  "version": "1.0.0",
+  "description": "Audio processing worker for Dialogue Polish — processes WAV files using FFmpeg",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node --watch index.js"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.57.4"
+  }
+}

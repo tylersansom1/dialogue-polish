@@ -1,0 +1,5 @@
+[functions.extract-metadata]
+verify_jwt = true
+
+[functions.process-dialogue]
+verify_jwt = true

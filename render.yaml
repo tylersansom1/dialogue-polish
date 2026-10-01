@@ -1,0 +1,16 @@
+# Render configuration for Dialogue Polish Audio Worker
+# This file tells Render how to build and run the worker.
+# See worker/README.md for full deployment instructions.
+
+services:
+  - type: web
+    name: dialogue-polish-worker
+    env: docker
+    rootDir: worker
+    plan: starter
+    healthCheckPath: /
+    envVars:
+      - key: SUPABASE_URL
+        sync: false
+      - key: SUPABASE_SERVICE_ROLE_KEY
+        sync: false
